@@ -8,10 +8,12 @@
           </a-col>
         </a-row>
       </div>
+      <horizontal-list></horizontal-list>
     </div>
 </template>
 
 <script>
+   import horizontalList from '~/components/cartoon/homepage/debris/horizontalList.vue';
     export default {
       name: "category",
       data () {
@@ -22,6 +24,9 @@
           ]
 
         }
+      },
+      components: {
+        horizontalList
       },
     }
 </script>

@@ -3,8 +3,8 @@
         <!--头部导航-->
       <div class="top">
         <a-radio-group v-model="tabPosition" class="select">
-          <a-radio-button value="top" @click="selectCard(0)">推荐</a-radio-button>
-          <a-radio-button value="bottom" @click="selectCard(1)">分类</a-radio-button>
+          <a-radio-button value="left" @click="selectCard(0)">推荐</a-radio-button>
+          <a-radio-button value="right" @click="selectCard(1)">分类</a-radio-button>
         </a-radio-group>
       </div>
       <recommend v-if="tab == 0"></recommend>
@@ -22,7 +22,7 @@
     name: "index",
     data () {
       return {
-        tabPosition: 'top',
+        tabPosition: 'right',
         tab:1, //默认分类
       }
     },
