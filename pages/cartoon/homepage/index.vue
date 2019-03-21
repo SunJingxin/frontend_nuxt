@@ -9,13 +9,6 @@
       </div>
       <recommend v-if="tab == 0"></recommend>
       <category  v-else></category>
-
-
-
-
-
-
-
         <!--底部导航-->
         <nav-tab/>
     </div>
