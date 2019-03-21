@@ -3,7 +3,7 @@
     <div>
        <div class="wrap">
          <a-row>
-           <a-col :span="8" v-for="item in resData">
+           <a-col :span="8" v-for="item in resData" @click="jumpDetail(item.id)">
              <img :src="item.book_cover" class="book_cover">
            </a-col>
          </a-row>
@@ -14,8 +14,8 @@
 
 <script>
     export default {
-        name: "list",
-        data : () => ({
+      name: "list",
+      data : () => ({
           resData:[{
             "id": 10504,
             "book_name": "原来我很爱你",
@@ -98,6 +98,12 @@
             "popularity": 26216408
           }]
         }),
+      methods:{
+        jumpDetail(id){
+          window.location.href="/cartoon/homepage/cartoon?id"+id
+        }
+      }
+
 
     }
 </script>

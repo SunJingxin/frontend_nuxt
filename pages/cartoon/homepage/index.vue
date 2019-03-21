@@ -15,9 +15,10 @@
 </template>
 
 <script>
-  import navTab from '~/components/cartoon/navTab.vue'
+  import navTab    from '~/components/cartoon/navTab.vue'
   import recommend from '~/components/cartoon/homepage/recommend.vue'
-  import category from '~/components/cartoon/homepage/category.vue'
+  import category  from '~/components/cartoon/homepage/category.vue'
+  import common    from '~/assets/js/common.js'
   export default {
     name: "index",
     data () {
@@ -35,9 +36,26 @@
       selectCard (val) {
         let vm = this;
         vm.tab = val;
-        console.log(val)
+        if(val){//1
+          localStorage.setItem("tab","category");
+          vm.tabPosition = "right"
+        }else{
+          localStorage.setItem("tab","recommend");
+          vm.tabPosition = "left"
+        }
       }
     },
+    created(){
+      let vm = this;
+    },
+    mounted(){
+      let vm = this;
+      let tab = localStorage.getItem("tab");
+      if(tab == "recommend"){
+        vm.tabPosition = "left";
+        vm.tab = 0;
+      }
+    }
   }
 </script>
 
