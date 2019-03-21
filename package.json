@@ -17,6 +17,10 @@
     "ant-design-vue": "^1.1.10"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "css-loader": "^2.1.1",
+    "nodemon": "^1.18.9",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
   }
 }
