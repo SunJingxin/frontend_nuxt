@@ -14,10 +14,12 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "~/assets/css/function.scss";
 .box{
   color: red;
   .f{
     color: fuchsia;
+    font-size: pxToRem(30);
   }
 }
 
