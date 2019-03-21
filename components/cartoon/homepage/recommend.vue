@@ -1,13 +1,17 @@
 <template>
     <!--推荐-->
     <div>
-        我是推荐
+      <vertically-list></vertically-list>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "recommend"
+  import verticallyList from '~/components/cartoon/homepage/debris/verticallyList.vue';
+  export default {
+        name: "recommend",
+        components: {
+          verticallyList
+        },
     }
 </script>
 

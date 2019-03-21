@@ -2,7 +2,7 @@
   <!--水平漫画list-->
   <div>
     <div class="wrap">
-      <div v-for="item in resData" class="box">
+      <div v-for="item in resData" class="box" @click="jumpDetail(item.id)">
         <img :src="item.book_cover" class="cover-img"/>
         <div class="cont">
           <div class="book_name">{{item.book_name}}</div>
@@ -101,6 +101,11 @@
              "popularity": 26216408
            }]
         }),
+        methods:{
+          jumpDetail(id){
+            window.location.href="/cartoon/homepage/details?id"+id
+          }
+        }
     }
 </script>
 
@@ -126,7 +131,7 @@
       padding-left: pxToRem(10);
       display: inline-block;
       .book_name{
-        font-size: pxToRem(19);
+        font-size: pxToRem(17);
         color: #666666;
         margin-bottom: pxToRem(6);
       }
