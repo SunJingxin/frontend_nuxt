@@ -48,3 +48,29 @@ cnpm install node-sass
 <style lang="scss" scoped> 
 
 ```
+3.
+``` bash
+使用代理
+https://zh.nuxtjs.org/faq/http-proxy
+
+npm i @nuxtjs/proxy -D
+在 nuxt.config.js 配置文件中添加对应的模块，并设置代理
+
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
+  ],
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api': {
+      target: 'http://example.com',
+      pathRewrite: {
+        '^/api' : '/'
+      }
+    }
+  } 
+axios:
+https://www.kancloud.cn/yunye/axios/234845
+```

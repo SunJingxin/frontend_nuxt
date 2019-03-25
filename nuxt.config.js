@@ -28,6 +28,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+     { src: '~assets/css/reset.scss', lang: 'scss' },
   ],
 
   /*
@@ -40,8 +41,20 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
-
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/container': {
+      target: 'https://www.17zuoye.com',
+      pathRewrite: {
+        '^/container' : '/container'
+      }
+    }
+  },
   /*
   ** Build configuration
   */

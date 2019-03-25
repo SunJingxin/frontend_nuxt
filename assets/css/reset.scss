@@ -1,0 +1,24 @@
+// touch-reset
+html, body, form, p, h1, h2, h3, h4, h5, h6, dl, ul, ol, li, dt, dd, select,blockquote { margin: 0; padding: 0; }
+body, select, input, option { color: #333; line-height: 1.5; font-family: "Heiti SC","Rotobo",Arial; -webkit-text-size-adjust: none; }
+ul, ol, li { list-style-type: none; }
+em, i { font-style: normal; }
+input, button, textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+a, a:visited { color: #333; }
+a { text-decoration: none; }
+a img { border: 0 none; }
+input:focus::-webkit-input-placeholder { color: rgba(0,0,0,0); }
+input::-webkit-input-placeholder { color: #999; }
+input:focus::-moz-placeholder { color: rgba(0,0,0,0); }
+input::-moz-placeholder { color: #999; }
+input:focus:-ms-input-placeholder { color: rgba(0,0,0,0); }
+input:-ms-input-placeholder { color: #999; }
+input[type="button"],input[type="text"],input[type="password"],input[type="submit"],input[type="search"],input[type="email"],input[type="number"],input[type="phone"],button, textarea { -webkit-appearance: none; -moz-appearance: none; -webkit-border-image: none; border-image: none; -webkit-border-radius: 0; border-radius: 0;-webkit-box-sizing:border-box; box-sizing:border-box;}
+.clearfix:after { content: ""; display: block; height: 0; overflow: hidden; clear: both; visibility: hidden; }
+* { -webkit-tap-highlight-color: transparent; background-clip: padding-box; }
+
+html {
+	font-size: 20px;
+}
+@import "./for_js.scss";
+@import "mediaScreen.scss";

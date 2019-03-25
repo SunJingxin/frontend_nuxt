@@ -1,0 +1,18 @@
+%hide {
+	display : none !important;
+}
+
+.do_hide{
+	@extend %hide;
+}
+
+[v-cloak] {
+	@extend %hide;
+}
+
+.do_opacity{
+	opacity : 0  !important;
+}
+
+// https://developer.mozilla.org/zh-CN/docs/Web/CSS/touch-action
+html{ touch-action: manipulation; }
