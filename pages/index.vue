@@ -7,6 +7,11 @@
 
 <script>
   export default {
+    head () {
+      return {
+        title: `漫画天下`,
+      }
+    },
 
   }
 </script>

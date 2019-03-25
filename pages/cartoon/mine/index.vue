@@ -9,6 +9,11 @@
 <script>
     import navTab   from  '~/components/cartoon/navTab.vue';
     export default {
+      head () {
+        return {
+          title: `我的`,
+        }
+      },
       name: "index",
       components: {
         navTab

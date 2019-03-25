@@ -18,6 +18,11 @@
     import horizontalList   from  '~/components/cartoon/homepage/horizontalList.vue';
 
     export default {
+      head () {
+        return {
+          title: `首页`,
+        }
+      },
       name: "recommend",
       components: {
         tab,

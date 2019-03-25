@@ -12,6 +12,11 @@
   import tab   from  '~/components/cartoon/homepage/tab.vue';
 
   export default {
+    head () {
+      return {
+        title: `首页`,
+      }
+    },
     name: "index",
     components: {
       navTab,

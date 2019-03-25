@@ -21,8 +21,18 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
+
+#性能优化
+``` bash
+一个不错的nuxt项目：http://www.fly63.com/
+1.对文件的压缩
+2.不加载不必要的资源
+3.webpack部署的时候 dev 环境与 线上环境分离
+
+```
+
 # 踩坑之路
-1.
+1.jenkins部署代码
 ``` bash
 echo $PATH
 node -v 
@@ -38,17 +48,15 @@ cnpm install node-sass
 npm run build
 pm2 restart server/index.js
 ```
-2.
+2.添加scss
 ``` bash
-添加scss
-
 npm install sass-loader postcss-loader style-loader css-loader --save-dev 
 cnpm install node-sass  
 在 .vue文件中 这个写
 <style lang="scss" scoped> 
 
 ```
-3.
+3.接口代理
 ``` bash
 使用代理
 https://zh.nuxtjs.org/faq/http-proxy
