@@ -46,7 +46,8 @@ cd frontend_nuxt
 npm  install
 cnpm install node-sass
 npm run build
-pm2 restart server/index.js
+npm run pm2_restart
+
 ```
 2.添加scss
 ``` bash
@@ -61,7 +62,7 @@ cnpm install node-sass
 使用代理
 https://zh.nuxtjs.org/faq/http-proxy
 
-npm i @nuxtjs/proxy -D
+npm i @nuxtjs/proxy @nuxtjs/axios -D
 在 nuxt.config.js 配置文件中添加对应的模块，并设置代理
 
   modules: [
